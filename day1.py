@@ -14,7 +14,7 @@ for aline in input:
         #print(aline)
         if aline + secondline == 2020:
             print(aline * secondline) 
-            break
+            
         
 ## PArt 2
 
@@ -26,5 +26,5 @@ for aline in input:
             thirdline = int(thirdline)
             if aline + secondline + thirdline == 2020:
                 print(aline * secondline * thirdline) 
-                break
+                
 
