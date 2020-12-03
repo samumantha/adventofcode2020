@@ -1,9 +1,12 @@
-inputtxt = 'd2_input.txt'
+"""
+
+Advent of Code, Day 2
+
+"""
+
+import sys
 
 ##Part 1
-
-with open(inputtxt,'r') as inp:
-    input = inp.readlines()
 
 def decode_line(line):
     
@@ -15,20 +18,32 @@ def decode_line(line):
 
     return low,high,letter,pw,count
 
-thecount = 0
-for line in input:
-    low,high,letter,pw,count = decode_line(line)
-    if count >= int(low) and count <= int(high):
-        thecount += 1
-print(thecount)
+def run_part1(input):
+    thecount = 0
+    for line in input:
+        low,high,letter,pw,count = decode_line(line)
+        if count >= int(low) and count <= int(high):
+            thecount += 1
+    print(thecount)
 
 ## PArt 2
 
-thecount = 0
-for line in input:
-    low,high,letter,pw,count = decode_line(line)
-    if pw[int(low)-1] == letter and pw[int(high)-1] != letter:
-        thecount += 1
-    elif pw[int(low)-1] != letter and pw[int(high)-1] == letter:
-        thecount += 1
-print(thecount)
+def run_part2(input):
+    thecount = 0
+    for line in input:
+        low,high,letter,pw,count = decode_line(line)
+        if pw[int(low)-1] == letter and pw[int(high)-1] != letter:
+            thecount += 1
+        elif pw[int(low)-1] != letter and pw[int(high)-1] == letter:
+            thecount += 1
+    print(thecount)
+
+
+if __name__ == "__main__":
+
+    inputtxt = sys.argv[1]
+    with open(inputtxt,'r') as inp:
+        input = inp.readlines()
+    
+    run_part1(input)
+    run_part2(input)

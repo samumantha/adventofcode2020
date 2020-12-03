@@ -1,12 +1,19 @@
-import numpy as np 
+"""
+
+Advent of Code, Day 3
+
+"""
+import sys
 
 ##Part 1
 
-inputtxt = 'd3_test.txt'
 #3 right 1 down
-
 # load data
-input = np.loadtxt(inputtxt)
+def load_data(inputtxt):
 
 
 ##Part 2
+
+
+if __name__ =="__main__":
+    inputtxt = sys.argv[1]
