@@ -2,13 +2,13 @@
 
 Advent of Code, Day 1
 
-input: list of numbers
+input: list of numbers, see d1_test.txt
 
 todo: 
 part 1: find the two numbers, that sum up to 2020, multiply them and submit the result
 part 2: find the three numbers from the list that sum up to 2020, multiply them and submit the result
 
-testresults:
+results on testset:
 part 1: 514579
 part 2: 241861950
 
