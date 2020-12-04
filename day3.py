@@ -10,9 +10,8 @@ import math
 
 
 # load data
-def input_to_list(inputtxt):
-    with open(inputtxt,'r') as inp:
-        input = inp.readlines()
+def input_to_list(input):
+
     #input has one string per line with /n in the end
     input_wo_newline = [line.strip() for line in input] 
     # one string per row
@@ -49,8 +48,10 @@ def count_trees(map,movement):
 
 if __name__ =="__main__":
     inputtxt = sys.argv[1]
+    with open(inputtxt,'r') as inp:
+        input = inp.readlines()
 
-    onemap = input_to_list(inputtxt)
+    onemap = input_to_list(input)
 
     ##Part 1
     print(count_trees(onemap, (3,1)))
