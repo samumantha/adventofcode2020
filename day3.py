@@ -2,14 +2,14 @@
 
 Advent of Code, Day 3
 
+input: 'map' with trees (#) and rocks(.), whenever right end of map is reached, same map is copied to the right 
+
+todo: ...
 """
 import sys
-import math
-
-##Part 1
 
 
-# load data
+
 def input_to_list(input):
 
     #input has one string per line with /n in the end
