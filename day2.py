@@ -2,11 +2,11 @@
 
 Advent of Code, Day 2
 
-input: list of strings with a policy (in beginning, see d2_test.txt), 
+input: list of strings with a policy (policy: string, see d2_test.txt), 
 
 todo: 
-part1: policy: the lowest and highest number of times the character must appear in string; check strings for validity
-part2: policy: character must appear at either first or second index given (indexing starts with 1); check strings for validity
+part1: policy: the lowest and highest number of times the character must appear in string (low-high char: string) check strings for validity
+part2: policy: character must appear at either first or second index given (indexing starts with 1: ind1-ind2 char: string); check strings for validity
 
 results on testset:
 part1: 2
