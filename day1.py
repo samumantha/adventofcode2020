@@ -2,6 +2,17 @@
 
 Advent of Code, Day 1
 
+input: list of numbers
+
+todo: 
+part 1: find the two numbers, that sum up to 2020, multiply them and submit the result
+part 2: find the three numbers from the list that sum up to 2020, multiply them and submit the result
+
+testresults:
+part 1: 514579
+part 2: 241861950
+
+
 """
 import sys
 
