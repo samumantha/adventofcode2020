@@ -65,7 +65,7 @@ def check_val_haircolor(value):
     valid = False
     # a # followed by exactly six characters 0-9 or a-f.
     if value.startswith('#') and len(value)== 7:
-        regex1 = re.compile('[a-z]')
+        regex1 = re.compile('[a-f]')
         regex2 = re.compile('[0-9]')
         if regex1.search(value) or regex2.search(value): 
             #print('valid')

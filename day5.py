@@ -13,6 +13,8 @@ def find_biggest(index):
 
     print(input[indexofbiggest])
 """
+
+# with a hint from shuuby :)
 def binary_check(input):
     # F or L gives 0
     highestid = 0
